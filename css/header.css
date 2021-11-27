@@ -1,0 +1,22 @@
+.header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.header_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.header_anouncement {
+    justify-self: center;
+}
+
+.header_nav {
+    justify-self: end;
+}
+
+.logo_link {
+    justify-self: flex-start;
+}
