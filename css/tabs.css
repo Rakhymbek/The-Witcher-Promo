@@ -28,3 +28,47 @@
     gap: 30px;
 }
 
+.tabs_item {
+    display: none;
+}
+.tabs_item_active {
+    display: block;
+}
+
+
+@media (max-width: 1000px ) {
+    .tabs_control {
+        padding: 16px 38px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width: 850px ) {
+    .tabs_content {
+        flex-wrap: wrap;
+    }
+    .tabs_control {
+        padding: 16px 46px;
+        margin-bottom: 16px;
+    }
+    .tabs_content_video {
+        row-gap: 50px;
+    }
+    .tabs_content_picture{
+        row-gap: 30px;
+    }
+    .tabs_content_product {
+        row-gap: 35px;
+    }
+}
+
+
+@media (max-width: 480px ) {
+    .tabs_control {
+        max-width: 220px;
+        height: 37px;
+        padding: 10px 30px;
+        margin-bottom: 10px;
+    }
+}

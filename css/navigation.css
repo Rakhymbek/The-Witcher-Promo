@@ -31,3 +31,32 @@
 .nav_link_kinopoisk {
     background-image: url('../img/kinopoisk.svg');
 }
+
+.nav_btn {
+    display: none;
+}
+
+@media (max-width: 750px ) {
+    .nav_btn {
+        display: block;
+    }
+    .nav_list {
+        display: none;
+    }
+    .navigation {
+        position: relative;
+    }
+    .nav_list_active {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 35px;
+        right: 0;
+        gap: 10px;
+    }
+    .nav_link {
+        width: 32px;
+        height: 32px;
+        display: block;
+    }
+}

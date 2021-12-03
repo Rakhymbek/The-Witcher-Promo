@@ -8,16 +8,17 @@
     <link rel="icon" href="img/logo.svg" type="image/svg+xml">
     <link rel="icon" href="img/logo.png" type="image/png">
     <!-- Style CSS -->
-    <link rel="stylesheet" href="css/style.css">
+
     <link rel="preload" 
     href="fonts/ibm-plex-mono-latin_cyrillic-500.woff2" 
     as="font" 
     type="font/woff2" 
     crossorigin>
+    <link rel="stylesheet" href="./css/styles.css">
     <!-- JS scripts -->
-    <script defer src="js/script.js"></script>
+    <script type="module" src="js/main.js"></script>
 </head>
-<body>
+<body class="page">
     <header class="header">
         <div class="container header_container">
             <a href="#" class="logo_link">
@@ -38,11 +39,15 @@
                             <a href="#" class="nav_link nav_link_kinopoisk" aria-label="Видеосервис Kinopoisk"></a>
                         </li>
                     </ul>
+                    
+                    <button class="nav_btn burger">
+                        <span class="burger_line"></span>
+                    </button>
                 </nav>
         </div>
     </header>
     <section class="present">
-        <div class="container">
+        <div class="container present_container">
             <div class="present_hero">
                 <h1 class="present_title">Ведьмак</h1>
                 <p class="present_tagline">Те, кто связан предназначением, всегда найдут друг друга</p>
@@ -65,8 +70,8 @@
                 <!-- /.tabs_control -->
                 
                 <ul class="tabs_list">
-                    <li class="tabs_item tabs_item_active">
-                        <ul class="tabs_content">
+                    <li class="tabs_item ">
+                        <ul class="tabs_content tabs_content_video">
                             <li class="card card_video">
                                 <a href="https://youtu.be/aTPPmHqMZOw" target="_blank" class="card_link">
                                     <figure>
@@ -93,8 +98,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="tabs_item">
-                        <ul class="tabs_content">
+                    <li class="tabs_item ">
+                        <ul class="tabs_content tabs_content_picture">
                             <li class="card card_img">
                                 <img class="card_photo_img" src="img/cirilla.jpg" alt="">
                             </li>
@@ -109,8 +114,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="tabs_item">
-                        <ul class="tabs_content">
+                    <li class="tabs_item tabs_item_active ">
+                        <ul class="tabs_content tabs_content_product">
                             <li class="card card_product">
                                 <article class="product">
                                     <img src="img/pendant.jpg" alt="" class="product_img">
