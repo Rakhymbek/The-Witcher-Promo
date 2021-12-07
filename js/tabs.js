@@ -16,6 +16,7 @@ const tabs = option => {
                 if (tabsBtn[i] === btn) {
                     tabsBtn[i].classList.add(activeClassBtn);
                     tabsElems[i].classList.add(activeClassTab);
+                    callback(i);
                 }else {
                     tabsBtn[i].classList.remove(activeClassBtn);
                     tabsElems[i].classList.remove(activeClassTab);
