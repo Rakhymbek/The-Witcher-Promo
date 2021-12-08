@@ -8,7 +8,7 @@ const getCard = function(dataCard) {
         case 'video':
             li.classList.add('card_video')
             li.innerHTML = ` 
-                <a href="${dataCard.link}" target="_blank" class="card_link">
+                <a href="${dataCard.link}" target="_blank" class="card_link tube">
                     <figure>
                         <img src="${dataCard.preview}" alt="${dataCard.description}" class="card_video_img">
                         <figcaption>${dataCard.description}</figcaption>
