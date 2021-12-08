@@ -174,7 +174,7 @@ const init = () => {
 			<div id="youtube-modal-loading">Загрузка...</div>
 			<div id="youtube-modal-close">&#10006;</div>
 			<div id="youtube-modal-container">
-				<iframe src="http://youtube.com/embed/${idVideo}" 
+				<iframe src="https://youtube.com/embed/${idVideo}" 
 					frameborder=0
 					id="youtube-modal" 
 					allowfullscreen="">
